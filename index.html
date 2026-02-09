@@ -3,67 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Feinwerkmechanik & KI</title>
+    <title>Portfolio | Feinwerkmechanik & IT-Innovation</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #0f172a; color: #f8fafc; }
+        body { background-color: #0f172a; color: #f8fafc; scroll-behavior: smooth; }
         .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card { background-color: #1e293b; border: 1px solid #334155; transition: transform 0.2s, border-color 0.2s; }
+        .card:hover { transform: translateY(-5px); border-color: #38bdf8; }
     </style>
 </head>
 <body class="font-sans">
 
     <nav class="p-6 flex justify-between items-center max-w-5xl mx-auto">
-        <div class="text-xl font-bold gradient-text">Vorname Nachname</div>
-        <div class="space-x-6 text-sm uppercase tracking-widest">
-            <a href="#about" class="hover:text-sky-400 transition">Über mich</a>
-            <a href="#projects" class="hover:text-sky-400 transition">Projekte</a>
-            <a href="#contact" class="hover:text-sky-400 transition">Kontakt</a>
+        <div class="text-xl font-bold gradient-text">Portfolio</div>
+        <div class="space-x-6 text-sm font-medium">
+            <a href="#projekte" class="hover:text-sky-400">Projekte</a>
+            <a href="https://drive.google.com/file/d/1oBvn8XMDxWSzWySr7ycKlhFMQUM-UWLe/view?usp=sharing" target="_blank" class="bg-sky-600 hover:bg-sky-500 px-4 py-2 rounded-lg transition">Lebenslauf (PDF)</a>
         </div>
     </nav>
 
-    <header class="py-20 text-center max-w-4xl mx-auto px-4">
-        <h1 class="text-5xl md:text-7xl font-extrabold mb-6">Präzision trifft <span class="gradient-text">Innovation</span>.</h1>
-        <p class="text-lg text-slate-400 mb-8">Feinwerkmechanikermeister & Konstrukteur auf dem Weg zum KI-Spezialisten. Ich automatisiere Prozesse und baue Brücken zwischen Hardware und Software.</p>
+    <header class="py-24 text-center max-w-4xl mx-auto px-4">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">Vom Meister zur <br><span class="gradient-text">KI-Automatisierung</span></h1>
+        <p class="text-xl text-slate-400 mb-10">Feinwerkmechanikermeister & Konstrukteur. Ich verbinde handwerkliche Präzision mit modernster IT-Logik und No-Code-Automatisierung.</p>
+        <div class="flex justify-center gap-4 text-xs uppercase tracking-widest text-slate-500">
+            <span>Python</span> • <span>JavaScript</span> • <span>Make.com</span> • <span>Generative AI</span>
+        </div>
     </header>
 
-    <section id="projects" class="max-w-6xl mx-auto px-4 py-12">
-        <h2 class="text-3xl font-bold mb-10 text-center">Relevante Projekte</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-sky-500 transition">
-                <h3 class="text-xl font-bold mb-2">AI-Content Automatisierung</h3>
-                <p class="text-sm text-slate-400 mb-4">Erstellung fiktiver KI-Charaktere für TikTok Shop & Affiliate Marketing. Workflow-Automatisierung mit Make.</p>
-                <span class="text-xs bg-sky-900 text-sky-300 px-2 py-1 rounded">KI & Make</span>
+    <section id="projekte" class="max-w-6xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-12 text-center underline decoration-sky-500 underline-offset-8">Tech-Projekte</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="card p-8 rounded-2xl">
+                <div class="text-sky-400 mb-4 text-3xl italic">01</div>
+                <h3 class="text-xl font-bold mb-3 text-white">AI-News Aggregator</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Eigener Workflow in <strong>Make.com</strong>, der täglich relevante KI-News filtert, zusammenfasst und automatisch per E-Mail liefert. Aktiv im täglichen Einsatz.</p>
+                <div class="flex gap-2"><span class="text-[10px] bg-slate-700 px-2 py-1 rounded">Make</span> <span class="text-[10px] bg-slate-700 px-2 py-1 rounded">OpenAI API</span></div>
             </div>
-            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-sky-500 transition">
-                <h3 class="text-xl font-bold mb-2">Python Scripting</h3>
-                <p class="text-sm text-slate-400 mb-4">Erste Schritte in der Datenverarbeitung und Automatisierung einfacher Routineaufgaben.</p>
-                <span class="text-xs bg-green-900 text-green-300 px-2 py-1 rounded">Python</span>
+
+            <div class="card p-8 rounded-2xl">
+                <div class="text-sky-400 mb-4 text-3xl italic">02</div>
+                <h3 class="text-xl font-bold mb-3 text-white">AI-Affiliate Marketing</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Entwicklung fiktiver KI-Charaktere zur Bewerbung physischer Produkte auf TikTok. Fokus auf Content-Skalierung und generative Bild-Systeme.</p>
+                <div class="flex gap-2"><span class="text-[10px] bg-slate-700 px-2 py-1 rounded">GenAI</span> <span class="text-[10px] bg-slate-700 px-2 py-1 rounded">Marketing</span></div>
             </div>
-            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-sky-500 transition">
-                <h3 class="text-xl font-bold mb-2">Konstruktion & Mechanik</h3>
-                <p class="text-sm text-slate-400 mb-4">Meisterliche Präzision in der Fertigung kombiniert mit modernem CAD-Design.</p>
-                <span class="text-xs bg-purple-900 text-purple-300 px-2 py-1 rounded">Engineering</span>
+
+            <div class="card p-8 rounded-2xl">
+                <div class="text-sky-400 mb-4 text-3xl italic">03</div>
+                <h3 class="text-xl font-bold mb-3 text-white">Social Media Logistik</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Automatisierung von Instagram-Posts. Projekt pausiert, um Fokus auf höhere Qualität bei KI-generierten Texten und Assets zu legen.</p>
+                <div class="flex gap-2"><span class="text-[10px] bg-slate-700 px-2 py-1 rounded">Automation</span> <span class="text-[10px] bg-slate-700 px-2 py-1 rounded">Quality Control</span></div>
             </div>
+
         </div>
     </section>
 
-    <section class="bg-slate-900/50 py-16">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-2xl font-bold mb-6 italic text-sky-400">// Logbuch des Lernens</h2>
-            <div class="border-l-2 border-slate-700 pl-6 space-y-8">
-                <div>
-                    <span class="text-xs text-slate-500">Februar 2026</span>
-                    <h4 class="font-bold">Automatisierung eines Workflows für TikTok</h4>
-                    <p class="text-slate-400 text-sm">Wie ich gelernt habe, API-Schnittstellen zu nutzen, um Content-Erstellung zu skalieren.</p>
-                </div>
-            </div>
-        </div>
+    <section class="max-w-4xl mx-auto px-4 py-20 text-center border-t border-slate-800">
+        <h2 class="text-2xl font-bold mb-6">Warum ich?</h2>
+        <p class="text-slate-400 leading-relaxed italic">
+            "Als Feinwerkmechanikermeister bin ich darauf trainiert, Systeme mit extrem geringen Toleranzen zu bauen. Diese Denkweise übertrage ich auf die IT: Robuste Workflows, saubere Logik und das Ziel, Prozesse durch Technologie effizienter zu machen."
+        </p>
     </section>
 
-    <footer id="contact" class="py-12 text-center text-slate-500 text-sm">
-        <p>&copy; 2026 Dein Name | <a href="#" class="underline">Impressum & Datenschutz</a></p>
+    <footer class="py-12 text-center text-slate-600 text-xs">
+        <p>&copy; 2026 | Erstellt mit Präzision und Code.</p>
     </footer>
 
 </body>
 </html>
-
