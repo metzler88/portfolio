@@ -67,7 +67,58 @@
 
     <footer class="py-12 text-center text-slate-600 text-xs">
         <p>&copy; 2026 | Erstellt mit Präzision und Code.</p>
+        <footer id="contact" class="py-12 text-center text-slate-500 text-xs border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 mb-6">
+            <h4 class="text-slate-400 font-bold mb-2">Kontakt</h4>
+            <p>E-Mail: DEINE-EMAIL@BEISPIEL.DE</p>
+            <p>Tel: DEINE-TELEFONNUMMER</p>
+        </div>
+        
+        <div class="space-x-4 mb-4">
+            <a href="#impressum" onclick="toggleModal('impressum')" class="underline hover:text-sky-400">Impressum</a>
+            <a href="#datenschutz" onclick="toggleModal('datenschutz')" class="underline hover:text-sky-400">Datenschutz</a>
+        </div>
+        <p>&copy; 2026 | Erstellt mit Präzision und Code.</p>
     </footer>
+
+    <div id="legal-modal" class="hidden fixed inset-0 bg-slate-950/90 flex items-center justify-center p-4 z-50">
+        <div class="bg-slate-800 p-8 rounded-2xl max-w-2xl w-full max-h-[80vh] overflow-y-auto border border-slate-700">
+            <div id="modal-content" class="text-left text-sm text-slate-300 leading-relaxed">
+                </div>
+            <button onclick="toggleModal()" class="mt-6 bg-sky-600 hover:bg-sky-500 text-white px-6 py-2 rounded-lg w-full transition">Schließen</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleModal(type) {
+            const modal = document.getElementById('legal-modal');
+            const content = document.getElementById('modal-content');
+            
+            if (!type) {
+                modal.classList.add('hidden');
+                return;
+            }
+
+            if (type === 'impressum') {
+                content.innerHTML = `
+                    <h2 class="text-xl font-bold mb-4 text-white">Impressum</h2>
+                    <p class="font-bold">Angaben gemäß § 5 TMG:</p>
+                    <p class="mb-4">Vorname Nachname<br>Straße Hausnummer<br>PLZ Ort</p>
+                    <p class="font-bold">Kontakt:</p>
+                    <p>Telefon: DEINE-TELEFONNUMMER<br>E-Mail: DEINE-EMAIL@BEISPIEL.DE</p>
+                `;
+            } else if (type === 'datenschutz') {
+                content.innerHTML = `
+                    <h2 class="text-xl font-bold mb-4 text-white">Datenschutzerklärung</h2>
+                    <p class="mb-4">Diese Website dient rein zu Bewerbungszwecken. Es werden keine personenbezogenen Daten von Besuchern automatisch erhoben, gespeichert oder analysiert.</p>
+                    <p class="font-bold">Hosting durch GitHub Pages:</p>
+                    <p>Die Seite wird auf Servern von GitHub Inc. gehostet. GitHub kann Server-Log-Files erfassen. Details dazu finden Sie in der Datenschutzerklärung von GitHub.</p>
+                `;
+            }
+            modal.classList.remove('hidden');
+        }
+    </script>
 
 </body>
 </html>
+
