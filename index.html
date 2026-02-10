@@ -3,89 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wadim Metzler - Portfolio | Feinwerkmechanik & IT-Innovation</title>
+    <title>Portfolio | Feinwerkmechanik & IT-Innovation</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background-color: #0f172a; color: #f8fafc; scroll-behavior: smooth; }
         .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .card { background-color: #1e293b; border: 1px solid #334155; transition: transform 0.2s, border-color 0.2s; }
-        .card:hover { transform: translateY(-5px); border-color: #38bdf8; }
+        @media (min-width: 768px) { .card:hover { transform: translateY(-5px); border-color: #38bdf8; } }
     </style>
 </head>
 <body class="font-sans">
 
-    <nav class="p-6 flex justify-between items-center max-w-5xl mx-auto">
-        <div class="text-xl font-bold gradient-text">Wadim Metzler</div>
-        <div class="space-x-6 text-sm font-medium">
+    <nav class="p-4 md:p-6 flex flex-wrap justify-between items-center max-w-5xl mx-auto gap-4">
+        <div class="text-xl font-bold gradient-text w-full text-center md:w-auto md:text-left">Portfolio</div>
+        <div class="flex justify-center items-center gap-4 md:gap-6 w-full md:w-auto text-sm font-medium">
             <a href="#projekte" class="hover:text-sky-400">Projekte</a>
-            <a href="https://drive.google.com/file/d/1oBvn8XMDxWSzWySr7ycKlhFMQUM-UWLe/view?usp=sharing" target="_blank" class="bg-sky-600 hover:bg-sky-500 px-4 py-2 rounded-lg transition">Lebenslauf (PDF)</a>
+            <a href="https://drive.google.com/file/d/1oBvn8XMDxWSzWySr7ycKlhFMQUM-UWLe/view?usp=sharing" target="_blank" class="bg-sky-600 hover:bg-sky-500 px-4 py-2 rounded-lg transition text-center">Lebenslauf (PDF)</a>
         </div>
     </nav>
 
-    <header class="py-24 text-center max-w-4xl mx-auto px-4">
-        <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">Vom Handwerks-Meister zur <br><span class="gradient-text">KI-Automatisierung</span></h1>
-        <p class="text-xl text-slate-400 mb-10">Feinwerkmechanikermeister & Konstrukteur. Ich verbinde handwerkliche Präzision mit modernster IT-Logik und No-Code-Automatisierung.</p>
-        <div class="flex justify-center gap-4 text-xs uppercase tracking-widest text-slate-500">
-            <span>Python</span> • <span>JavaScript</span> • <span>Make.com</span> • <span>Generative AI</span>
+    <header class="py-12 md:py-24 text-center max-w-4xl mx-auto px-6">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Vom Meister zur <br><span class="gradient-text">KI-Automatisierung</span></h1>
+        <p class="text-base md:text-xl text-slate-400 mb-10 leading-relaxed">
+            Feinwerkmechanikermeister & Konstrukteur. Wer Präzision im Mikrometerbereich beherrscht, versteht auch die Logik von Code. Ich verbinde handwerkliche Genauigkeit mit modernster IT-Logik.
+        </p>
+        <div class="flex flex-wrap justify-center gap-3 text-[10px] md:text-xs uppercase tracking-widest text-slate-500">
+            <span class="border border-slate-700 px-2 py-1 rounded">Python</span>
+            <span class="border border-slate-700 px-2 py-1 rounded">Make.com</span>
+            <span class="border border-slate-700 px-2 py-1 rounded">Generative AI</span>
         </div>
     </header>
 
-    <section id="projekte" class="max-w-6xl mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold mb-12 text-center underline decoration-sky-500 underline-offset-8">Tech-Projekte</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section id="projekte" class="max-w-6xl mx-auto px-6 py-12">
+        <h2 class="text-2xl md:text-3xl font-bold mb-10 text-center underline decoration-sky-500 underline-offset-8">Tech-Projekte</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             
-            <div class="card p-8 rounded-2xl">
-                <div class="text-sky-400 mb-4 text-3xl italic">01</div>
+            <div class="card p-6 md:p-8 rounded-2xl">
+                <div class="text-sky-400 mb-4 text-2xl italic font-bold">01</div>
                 <h3 class="text-xl font-bold mb-3 text-white">AI-News Aggregator</h3>
-                <p class="text-slate-400 text-sm leading-relaxed mb-4">Eigener Workflow in <strong>Make.com</strong>, der täglich relevante KI-News filtert, zusammenfasst und automatisch per E-Mail liefert. Aktiv im täglichen Einsatz.</p>
-                <div class="flex gap-2"><span class="text-[10px] bg-slate-700 px-2 py-1 rounded">Make</span> <span class="text-[10px] bg-slate-700 px-2 py-1 rounded">OpenAI API</span></div>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Eigener Workflow in Make.com, der täglich relevante KI-News filtert und per E-Mail liefert. Aktiv im Einsatz.</p>
+                <div class="flex gap-2"><span class="text-[10px] bg-slate-800 text-sky-300 border border-sky-900 px-2 py-1 rounded">Make</span></div>
             </div>
 
-            <div class="card p-8 rounded-2xl">
-                <div class="text-sky-400 mb-4 text-3xl italic">02</div>
+            <div class="card p-6 md:p-8 rounded-2xl">
+                <div class="text-sky-400 mb-4 text-2xl italic font-bold">02</div>
                 <h3 class="text-xl font-bold mb-3 text-white">AI-Affiliate Marketing</h3>
-                <p class="text-slate-400 text-sm leading-relaxed mb-4">Entwicklung fiktiver KI-Charaktere zur Bewerbung physischer Produkte auf TikTok. Fokus auf Content-Skalierung und generative Bild-Systeme.</p>
-                <div class="flex gap-2"><span class="text-[10px] bg-slate-700 px-2 py-1 rounded">GenAI</span> <span class="text-[10px] bg-slate-700 px-2 py-1 rounded">Marketing</span></div>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Entwicklung fiktiver KI-Charaktere zur Bewerbung von Produkten auf TikTok. Fokus auf Content-Skalierung.</p>
+                <div class="flex gap-2"><span class="text-[10px] bg-slate-800 text-sky-300 border border-sky-900 px-2 py-1 rounded">GenAI</span></div>
             </div>
 
-            <div class="card p-8 rounded-2xl">
-                <div class="text-sky-400 mb-4 text-3xl italic">03</div>
-                <h3 class="text-xl font-bold mb-3 text-white">Social Media Logistik</h3>
-                <p class="text-slate-400 text-sm leading-relaxed mb-4">Automatisierung von Instagram-Posts. Projekt pausiert, um Fokus auf höhere Qualität bei KI-generierten Texten und Assets zu legen.</p>
-                <div class="flex gap-2"><span class="text-[10px] bg-slate-700 px-2 py-1 rounded">Automation</span> <span class="text-[10px] bg-slate-700 px-2 py-1 rounded">Quality Control</span></div>
+            <div class="card p-6 md:p-8 rounded-2xl">
+                <div class="text-sky-400 mb-4 text-2xl italic font-bold">03</div>
+                <h3 class="text-xl font-bold mb-3 text-white">Automation & Quality</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Automatisierung von Social Media Posts. Fokus auf Qualitätskontrolle der KI-Outputs.</p>
+                <div class="flex gap-2"><span class="text-[10px] bg-slate-800 text-sky-300 border border-sky-900 px-2 py-1 rounded">Quality Control</span></div>
             </div>
 
         </div>
     </section>
 
-    <section class="max-w-4xl mx-auto px-4 py-20 text-center border-t border-slate-800">
-        <h2 class="text-2xl font-bold mb-6">Warum ich?</h2>
-        <p class="text-slate-400 leading-relaxed italic">
-            "Als Feinwerkmechanikermeister bin ich darauf trainiert, Systeme mit extrem geringen Toleranzen zu bauen. Diese Denkweise übertrage ich auf die IT: Robuste Workflows, saubere Logik und das Ziel, Prozesse durch Technologie effizienter zu machen."
+    <section class="max-w-4xl mx-auto px-6 py-16 text-center border-t border-slate-800">
+        <h2 class="text-2xl font-bold mb-6">Mein Mindset</h2>
+        <p class="text-slate-400 leading-relaxed italic text-sm md:text-base">
+            "Ich verlasse den sicheren Hafen der klassischen Mechanik, um das Gelände der IT und Künstlichen Intelligenz zu erobern. Jetzt."
         </p>
     </section>
 
-    <footer class="py-12 text-center text-slate-600 text-xs">
-        <p>&copy; 2026 | Erstellt mit Präzision und Code.</p>
-        <footer id="contact" class="py-12 text-center text-slate-500 text-xs border-t border-slate-800">
-        <div class="max-w-4xl mx-auto px-4 mb-6">
-            <h4 class="text-slate-400 font-bold mb-2">Kontakt</h4>
-            <p>E-Mail: metzler88@gmail.com</p>
-            <p>Tel: 0173 2431285</p>
+    <footer id="contact" class="py-12 text-center text-slate-500 text-xs border-t border-slate-800 px-6">
+        <div class="max-w-4xl mx-auto mb-6">
+            <h4 class="text-slate-400 font-bold mb-2 uppercase tracking-tighter">Kontakt</h4>
+            <p>E-Mail: DEINE-EMAIL@BEISPIEL.DE</p>
         </div>
         
-        <div class="space-x-4 mb-4">
-            <a href="#impressum" onclick="toggleModal('impressum')" class="underline hover:text-sky-400">Impressum</a>
-            <a href="#datenschutz" onclick="toggleModal('datenschutz')" class="underline hover:text-sky-400">Datenschutz</a>
+        <div class="flex justify-center gap-6 mb-4">
+            <button onclick="toggleModal('impressum')" class="underline hover:text-sky-400">Impressum</button>
+            <button onclick="toggleModal('datenschutz')" class="underline hover:text-sky-400">Datenschutz</button>
         </div>
-        <p>&copy; 2026 | Erstellt mit Präzision und Code.</p>
+        <p>&copy; 2026 | Gebaut mit Präzision.</p>
     </footer>
 
-    <div id="legal-modal" class="hidden fixed inset-0 bg-slate-950/90 flex items-center justify-center p-4 z-50">
-        <div class="bg-slate-800 p-8 rounded-2xl max-w-2xl w-full max-h-[80vh] overflow-y-auto border border-slate-700">
-            <div id="modal-content" class="text-left text-sm text-slate-300 leading-relaxed">
-                </div>
-            <button onclick="toggleModal()" class="mt-6 bg-sky-600 hover:bg-sky-500 text-white px-6 py-2 rounded-lg w-full transition">Schließen</button>
+    <div id="legal-modal" class="hidden fixed inset-0 bg-slate-950/95 flex items-center justify-center p-4 z-50">
+        <div class="bg-slate-900 p-6 md:p-8 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-slate-700">
+            <div id="modal-content" class="text-left text-sm text-slate-300 leading-relaxed"></div>
+            <button onclick="toggleModal()" class="mt-6 bg-slate-700 hover:bg-slate-600 text-white px-6 py-3 rounded-xl w-full transition">Schließen</button>
         </div>
     </div>
 
@@ -93,38 +93,15 @@
         function toggleModal(type) {
             const modal = document.getElementById('legal-modal');
             const content = document.getElementById('modal-content');
-            
-            if (!type) {
-                modal.classList.add('hidden');
-                return;
-            }
-
+            if (!type) { modal.classList.add('hidden'); return; }
             if (type === 'impressum') {
-                content.innerHTML = `
-                    <h2 class="text-xl font-bold mb-4 text-white">Impressum</h2>
-                    <p class="font-bold">Angaben gemäß § 5 TMG:</p>
-                    <p class="mb-4">Wadim Metzler<br>Schaltenberg 9<br>72393 Burladingen</p>
-                    <p class="font-bold">Kontakt:</p>
-                    <p>Telefon: 0173 2431285<br>E-Mail: metzler88@gmail.com</p>
-                `;
+                content.innerHTML = `<h2 class="text-xl font-bold mb-4 text-white">Impressum</h2><p><strong>Angaben gemäß § 5 TMG:</strong></p><p>Dein Name<br>Straße Hausnummer<br>PLZ Ort</p><br><p><strong>Kontakt:</strong></p><p>E-Mail: DEINE-EMAIL@BEISPIEL.DE</p>`;
             } else if (type === 'datenschutz') {
-                content.innerHTML = `
-                    <h2 class="text-xl font-bold mb-4 text-white">Datenschutzerklärung</h2>
-                    <p class="mb-4">Diese Website dient rein zu Bewerbungszwecken. Es werden keine personenbezogenen Daten von Besuchern automatisch erhoben, gespeichert oder analysiert.</p>
-                    <p class="font-bold">Hosting durch GitHub Pages:</p>
-                    <p>Die Seite wird auf Servern von GitHub Inc. gehostet. GitHub kann Server-Log-Files erfassen. Details dazu finden Sie in der Datenschutzerklärung von GitHub.</p>
-                `;
+                content.innerHTML = `<h2 class="text-xl font-bold mb-4 text-white">Datenschutz</h2><p>Diese Website dient Bewerbungszwecken. Es werden keine Tracker verwendet. Hosting via GitHub Pages.</p>`;
             }
             modal.classList.remove('hidden');
         }
     </script>
-<script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="C1peyqf6R1mPSeI2HrylK";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
-</body>
+
+    </body>
 </html>
-
-
-
-
-
